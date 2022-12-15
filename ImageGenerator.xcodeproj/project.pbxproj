@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1E5AEF5D294AB34C0023453C /* ImageGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF5C294AB34C0023453C /* ImageGeneratorApp.swift */; };
-		1E5AEF5F294AB34C0023453C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF5E294AB34C0023453C /* ContentView.swift */; };
 		1E5AEF61294AB34D0023453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5AEF60294AB34D0023453C /* Assets.xcassets */; };
-		1E5AEF64294AB34D0023453C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5AEF63294AB34D0023453C /* Preview Assets.xcassets */; };
-		1E5AEF6E294AB34D0023453C /* ImageGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF6D294AB34D0023453C /* ImageGeneratorTests.swift */; };
-		1E5AEF78294AB34D0023453C /* ImageGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF77294AB34D0023453C /* ImageGeneratorUITests.swift */; };
-		1E5AEF7A294AB34D0023453C /* ImageGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF79294AB34D0023453C /* ImageGeneratorUITestsLaunchTests.swift */; };
+		1E5AEF87294AB3810023453C /* ImageGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF86294AB3810023453C /* ImageGeneratorView.swift */; };
+		1E5AEF89294AB3AF0023453C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 1E5AEF88294AB3AF0023453C /* Preview Content */; };
+		1E5AEF8D294AB3F00023453C /* ImageGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF8C294AB3F00023453C /* ImageGeneratorViewModel.swift */; };
+		1E5AEF90294AB4B00023453C /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E5AEF8F294AB4B00023453C /* OpenAIKit */; };
+		1E5AEF93294AB8CD0023453C /* keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AEF92294AB8CD0023453C /* keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,13 @@
 /* Begin PBXFileReference section */
 		1E5AEF59294AB34C0023453C /* ImageGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5AEF5C294AB34C0023453C /* ImageGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorApp.swift; sourceTree = "<group>"; };
-		1E5AEF5E294AB34C0023453C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E5AEF60294AB34D0023453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E5AEF63294AB34D0023453C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E5AEF69294AB34D0023453C /* ImageGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5AEF6D294AB34D0023453C /* ImageGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorTests.swift; sourceTree = "<group>"; };
 		1E5AEF73294AB34D0023453C /* ImageGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5AEF77294AB34D0023453C /* ImageGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorUITests.swift; sourceTree = "<group>"; };
-		1E5AEF79294AB34D0023453C /* ImageGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E5AEF86294AB3810023453C /* ImageGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorView.swift; sourceTree = "<group>"; };
+		1E5AEF88294AB3AF0023453C /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		1E5AEF8C294AB3F00023453C /* ImageGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorViewModel.swift; sourceTree = "<group>"; };
+		1E5AEF92294AB8CD0023453C /* keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5AEF90294AB4B00023453C /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				1E5AEF5B294AB34C0023453C /* ImageGenerator */,
-				1E5AEF6C294AB34D0023453C /* ImageGeneratorTests */,
-				1E5AEF76294AB34D0023453C /* ImageGeneratorUITests */,
 				1E5AEF5A294AB34C0023453C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,37 +92,38 @@
 		1E5AEF5B294AB34C0023453C /* ImageGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				1E5AEF91294AB8C30023453C /* Keys */,
+				1E5AEF8B294AB3DB0023453C /* ViewModel */,
+				1E5AEF8A294AB3D60023453C /* View */,
 				1E5AEF5C294AB34C0023453C /* ImageGeneratorApp.swift */,
-				1E5AEF5E294AB34C0023453C /* ContentView.swift */,
 				1E5AEF60294AB34D0023453C /* Assets.xcassets */,
-				1E5AEF62294AB34D0023453C /* Preview Content */,
+				1E5AEF88294AB3AF0023453C /* Preview Content */,
 			);
 			path = ImageGenerator;
 			sourceTree = "<group>";
 		};
-		1E5AEF62294AB34D0023453C /* Preview Content */ = {
+		1E5AEF8A294AB3D60023453C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1E5AEF63294AB34D0023453C /* Preview Assets.xcassets */,
+				1E5AEF86294AB3810023453C /* ImageGeneratorView.swift */,
 			);
-			path = "Preview Content";
+			path = View;
 			sourceTree = "<group>";
 		};
-		1E5AEF6C294AB34D0023453C /* ImageGeneratorTests */ = {
+		1E5AEF8B294AB3DB0023453C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1E5AEF6D294AB34D0023453C /* ImageGeneratorTests.swift */,
+				1E5AEF8C294AB3F00023453C /* ImageGeneratorViewModel.swift */,
 			);
-			path = ImageGeneratorTests;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		1E5AEF76294AB34D0023453C /* ImageGeneratorUITests */ = {
+		1E5AEF91294AB8C30023453C /* Keys */ = {
 			isa = PBXGroup;
 			children = (
-				1E5AEF77294AB34D0023453C /* ImageGeneratorUITests.swift */,
-				1E5AEF79294AB34D0023453C /* ImageGeneratorUITestsLaunchTests.swift */,
+				1E5AEF92294AB8CD0023453C /* keys.swift */,
 			);
-			path = ImageGeneratorUITests;
+			path = Keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +142,9 @@
 			dependencies = (
 			);
 			name = ImageGenerator;
+			packageProductDependencies = (
+				1E5AEF8F294AB4B00023453C /* OpenAIKit */,
+			);
 			productName = ImageGenerator;
 			productReference = 1E5AEF59294AB34C0023453C /* ImageGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 1E5AEF50294AB34C0023453C;
+			packageReferences = (
+				1E5AEF8E294AB4B00023453C /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
 			productRefGroup = 1E5AEF5A294AB34C0023453C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5AEF64294AB34D0023453C /* Preview Assets.xcassets in Resources */,
+				1E5AEF89294AB3AF0023453C /* Preview Content in Resources */,
 				1E5AEF61294AB34D0023453C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5AEF5F294AB34C0023453C /* ContentView.swift in Sources */,
+				1E5AEF8D294AB3F00023453C /* ImageGeneratorViewModel.swift in Sources */,
+				1E5AEF93294AB8CD0023453C /* keys.swift in Sources */,
+				1E5AEF87294AB3810023453C /* ImageGeneratorView.swift in Sources */,
 				1E5AEF5D294AB34C0023453C /* ImageGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5AEF6E294AB34D0023453C /* ImageGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5AEF7A294AB34D0023453C /* ImageGeneratorUITestsLaunchTests.swift in Sources */,
-				1E5AEF78294AB34D0023453C /* ImageGeneratorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E5AEF8E294AB4B00023453C /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E5AEF8F294AB4B00023453C /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E5AEF8E294AB4B00023453C /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E5AEF51294AB34C0023453C /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct ImageGeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ImageGeneratorView()
         }
     }
 }
